@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TechMonk Project Solutions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+<!--responsive navigation bar start-->
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>TechMonk</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Trainings</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+    <script src="script.js"></script>
+  </body>
+<!--responsive navigation bar end-->
+
+<!--responsive footer start-->
+  <body>
+    <footer>
+      <nav>
+        <div class="container">
+          <div class="sec aboutus">
+            <h2>About Us</h2>
+              <p>We offer industrial prjects/internships and technical courses to students which are designed and monitored by industrial experts.</p>
+              <ul class="sci">
+                  <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+          <div class="sec quickLinks">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Training</a></li>
+                  <li><a href="#">Terms & conditions</a></li>
+              </ul>
+          </div>
+           <div class="contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                  <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>
+                      #47, 4th cross, Kalidasa Layout,<br>
+                      Srinagar, Bengaluru 560 050</span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:+91 8660093717">+91 8660093717</a> <br><a href="tel:+91 6361699561">+91 6361699561</a></p>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:techmonkprojectsolutions@gmail.com">techmonkprojectsolutions@gmail.com</a></p>
+                  </li>
+                </ul>
+           </div>
+        </div>
+      </nav>
+    </footer>
+    <div class="copyrightText">
+      <p>Copyright &copy 2020 TechMonk Project Solutions | All Rights Reserved</p>
+    </div>
+  </body>
+<!--responsive footer end-->
+
+<!--responsive slider start-->
+<body>
+<slideshow>
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+        <div class="slide first">
+          <image src="1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <image src="2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <image src="3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <image src="4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <image src="5.jpg" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+    </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+  </div>
+</slideshow>
+<!--JS for slider-->
+          <script type="text/javascript">
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 5){
+              counter = 1;
+            }
+          },4000);
+          </script>
+</body>
+<!--responsive slider end-->
+</html>
